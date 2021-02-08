@@ -4,8 +4,8 @@ class CartItem extends React.Component {
     constructor() {    //State
         super();
         this.state = {
-            price: 999,
-            title: 'Phone',
+            price: "68,900",
+            title: 'iPhone 12 PRO',
             qty: 1,
             img: ''
         }
@@ -17,6 +17,10 @@ class CartItem extends React.Component {
         });
     }
     decreaseQuantity = () => {
+        const {qty} = this.state;
+        if(qty === 0){
+            return;
+        }
         this.setState({
             qty: this.state.qty - 1
         });
