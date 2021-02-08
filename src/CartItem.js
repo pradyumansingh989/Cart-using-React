@@ -11,9 +11,14 @@ class CartItem extends React.Component {
         }
     }
     increaseQuantity = () => {
-        console.log('this',this.state);
+        // console.log('this',this.state);
         this.setState({
-            qty: this.state.qty + 1
+            qty: this.state.qty + 1  //Shallow Merging with  state
+        });
+    }
+    decreaseQuantity = () => {
+        this.setState({
+            qty: this.state.qty - 1
         });
     }
     render() {
@@ -37,7 +42,9 @@ class CartItem extends React.Component {
 
                         <img 
                         alt="decrease" className="actions-icons" 
-                        src="https://www.flaticon.com/svg/vstatic/svg/992/992683.svg?token=exp=1612760366~hmac=0beb2a57830d942f76f49da663c0b201" />
+                        src="https://www.flaticon.com/svg/vstatic/svg/992/992683.svg?token=exp=1612760366~hmac=0beb2a57830d942f76f49da663c0b201"
+                        onClick={this.decreaseQuantity.bind(this)}
+                        />
 
                         <img 
                         alt="delete" className="actions-icons" 
