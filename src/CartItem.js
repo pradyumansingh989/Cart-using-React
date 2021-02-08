@@ -12,6 +12,9 @@ class CartItem extends React.Component {
     }
     increaseQuantity = () => {
         console.log('this',this.state);
+        this.setState({
+            qty: this.state.qty + 1
+        });
     }
     render() {
         const {price, title, qty} = this.state; //Object destructuring
@@ -28,17 +31,17 @@ class CartItem extends React.Component {
                         {/* {button} */}
                         <img 
                         alt="increase" className="actions-icons" 
-                        src="https://www.flaticon.com/svg/vstatic/svg/1828/1828926.svg?token=exp=1612591898~hmac=f3a7ae29f1c4c958832dd1a6d47875a2"
+                        src="https://www.flaticon.com/svg/vstatic/svg/992/992651.svg?token=exp=1612760291~hmac=5b68397451c32563e559f109ab86cf4e"
                         onClick={this.increaseQuantity.bind(this)} 
                          />
 
                         <img 
                         alt="decrease" className="actions-icons" 
-                        src="https://www.flaticon.com/svg/vstatic/svg/1828/1828906.svg?token=exp=1612591934~hmac=630d323e02b12df8377fc2da2a1a5187" />
+                        src="https://www.flaticon.com/svg/vstatic/svg/992/992683.svg?token=exp=1612760366~hmac=0beb2a57830d942f76f49da663c0b201" />
 
                         <img 
                         alt="delete" className="actions-icons" 
-                        src="https://www.flaticon.com/svg/vstatic/svg/1214/1214428.svg?token=exp=1612591986~hmac=0df38927315989ce404348ebfbdb8c05" />
+                        src="https://www.flaticon.com/svg/vstatic/svg/1345/1345874.svg?token=exp=1612760400~hmac=4dd59b982b8cec0f8faecfe7d8aadd6c" />
                     </div>
                 </div>
             </div>
