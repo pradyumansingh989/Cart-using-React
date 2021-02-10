@@ -8,21 +8,21 @@ class App extends React.Component {
     this.state = {
        products: [
         {
-            price: "68,900",
+            price: 68900,
             title: 'iPhone 12 PRO ',
             qty: 1,
             img: 'https://images-na.ssl-images-amazon.com/images/I/71fJ-gmBZtL._SX466_.jpg',
             id: 1
         },
         {
-            price: "90,900",
+            price: 90900,
             title: 'iPad PRO ',
             qty: 1,
             img: 'https://static.bhphoto.com/images/images2500x2500/1584548574_1553824.jpg',
             id: 2
         },
         {
-            price: "1,23,900",
+            price: 123900,
             title: 'Macbook PRO ',
             qty: 1,
             img: 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp-spacegray-select-202011?wid=1280&hei=1190&fmt=jpeg&qlt=80&.v=1603406905000',
